@@ -4,6 +4,7 @@ import { i18n } from "./configs/i18n";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   srcDir: "src/",
+  ssr: true,
 
   modules: [
     "@vueuse/nuxt",
@@ -62,5 +63,6 @@ export default defineNuxtConfig({
     url: "https://testing-resume.vercel.app/"
   },
 
-  pwa
+  pwa,
+  compatibilityDate: "2024-12-30"
 });
