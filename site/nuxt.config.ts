@@ -5,6 +5,9 @@ import { i18n } from "./configs/i18n";
 export default defineNuxtConfig({
   srcDir: "src/",
   ssr: true,
+  nitro: {
+    preset: 'vercel'
+  },
 
   modules: [
     "@vueuse/nuxt",
